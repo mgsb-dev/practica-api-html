@@ -1,0 +1,95 @@
+* {
+  font-family: "Gill Sans", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reproductor-container {
+  margin: 2rem;
+  max-width: 100%;
+}
+
+input[type="file"].video-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-text {
+  display: block;
+  padding: 14px 45px;
+  background: #39d2b4;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.4s;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 220px;
+  text-align: center;
+}
+
+.input-file-trigger:hover,
+.input-file-trigger:focus {
+  background: #34495e;
+  color: #39d2b4;
+}
+
+.controles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  max-width: 300px;
+}
+
+.boton {
+  margin-right: 0.5rem;
+  border: 1px solid #39d2b4;
+  border-radius: 2px;
+  padding: 0.2rem 0.4rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.boton:active {
+  translate: 1px 3px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3) inset;
+}
+
+.controlador-volumen {
+  cursor: pointer;
+}
+
+@keyframes darkglow {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  30% {
+    opacity: 1;
+    scale: 1;
+  }
+  100% {
+    opacity: 0;
+    scale: 2;
+  }
+}

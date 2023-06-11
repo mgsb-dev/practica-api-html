@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 4. APIs de HTML5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="reproductorContainer" class="reproductor-container">
+        <div id="inputContainer" class="input-container">
+          <input
+            class="video-input"
+            id="video-input"
+            type="file"
+            accept="video/*"
+          />
+          <label tabindex="0" for="input-text" class="input-text">
+            Seleccione un video
+          </label>
+        </div>
+        <video id="reproductorVideo"></video>
+        <div id="cargandoVideo">Cargando vídeo...</div>
+      </div>
+
+      <div id="controles" class="controles">
+        <button id="botonPlay" class="boton">Play</button>
+        <button id="botonPause" class="boton">Pause</button>
+        <input
+          type="range"
+          id="controladorVolumen"
+          class="controlador-volumen"
+          min="0"
+          max="1"
+          step="0.1"
+          value="1"
+        />
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
